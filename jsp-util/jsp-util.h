@@ -1,6 +1,11 @@
 #ifndef JSP_UTIL_H
 #define JSP_UTIL_H
 
+#define JSP_FINE 1
+#define JSP_BAD  0
+
+
+
 /*
  *  value types:
  *   - string

@@ -1,14 +1,14 @@
 #ifndef JSP_OPJ_H
 #define JSP_OBH_H
 
-struct jsp_kvp {
-        char *key;
-        void *value;
+#define MAX_KEY_LENGTH 32
+
+struct jsp_obj {
+        char  key[MAX_KEY_LENGTH];
+        void *val;
         int   type;
 };
 
-struct jsp_obj {
-        struct kvp *elm;
-};
+int jsp_valid_obj(jsp_obj);
 
 #endif
